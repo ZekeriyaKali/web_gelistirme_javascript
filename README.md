@@ -1,37 +1,59 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# ERP / CRM Web Yönetim Sistemi
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+İşletmelerin müşteri ilişkilerini (CRM), cari hesap hareketlerini ve operasyonel süreçlerini tek bir merkezden yönetebilmesi amacıyla React ve TypeScript kullanılarak geliştirilmiş kurumsal web uygulaması.
 
-Currently, two official plugins are available:
+**Canlı Demo:** [https://js-erp-crm.netlify.app](https://js-erp-crm.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Ekran Görüntüsü
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Uygulama Arayüzü](./screenshot.png)
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Temel Özellikler
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+* **Yönetim Paneli (Dashboard):** Toplam cari bakiyeler, aktif müşteri sayıları ve finansal özetlerin anlık takibi.
+* **Müşteri ve Cari Yönetimi (CRM):** Yeni müşteri veya firma kaydı oluşturma, bilgi güncelleme, silme ve cari bakiye görüntüleme.
+* **Finansal Hareket Takibi:** Borç, alacak, tahsilat ve ödeme işlemlerinin tarih ve açıklama bazlı kayıt yönetimi.
+* **Arama ve Filtreleme:** Müşteri adı, kategori veya işlem durumuna göre anlık dinamik filtreleme.
+* **Kalıcı Veri Depolama:** Harici bir sunucu bağımlılığı olmaksızın tarayıcı LocalStorage altyapısı ile kalıcı veri saklama.
+* **Duyarlı (Responsive) Arayüz:** Masaüstü, tablet ve mobil ekran boyutlarıyla uyumlu modern tasarım.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
-=======
-# web_gelistirme_javascript
-React, TypeScript ve Tailwind CSS ile geliştirilmiş, LocalStorage destekli modern ERP/CRM müşteri ve cari yönetim sistemi
->>>>>>> 7cf368d0f122cc7451f5d2a3f280382546b71add
+---
+
+## Teknoloji Yığını
+
+* **Frontend:** React, TypeScript
+* **Build Aracı:** Vite
+* **Stil ve Arayüz:** Tailwind CSS
+* **Veri Yönetimi:** React Hooks, LocalStorage API
+* **Deployment:** GitHub, Netlify
+
+---
+
+## Kurulum ve Çalıştırma
+
+Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları sırasıyla izleyin:
+
+1. **Depoyu klonlayın:**
+   ```bash
+   git clone [https://github.com/ZekeriyaKali/web_gelistirme_javascript.git](https://github.com/ZekeriyaKali/web_gelistirme_javascript.git)
+   ```
+
+2. **Proje dizinine geçin:**
+   ```bash
+   cd web_gelistirme_javascript
+   ```
+
+3. **Gerekli bağımlılıkları yükleyin:**
+   ```bash
+   npm install
+   ```
+
+4. **Geliştirme sunucusunu başlatın:**
+   ```bash
+   npm run dev
+   ```
+   Uygulama varsayılan olarak `http://localhost:5173` adresi üzerinden erişilebilir olacaktır.
