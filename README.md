@@ -2,7 +2,7 @@
 
 İşletmelerin müşteri ilişkilerini (CRM), cari hesap hareketlerini ve operasyonel süreçlerini tek bir merkezden yönetebilmesi amacıyla React ve TypeScript kullanılarak geliştirilmiş kurumsal web uygulaması.
 
-**Canlı Demo:** [https://js-erp-crm.netlify.app](https://js-erp-crm.netlify.app)
+**Canlı Demo:** [https://web-gelistirme-js-erp-crm.netlify.app/]https://web-gelistirme-js-erp-crm.netlify.app/)
 
 ---
 
